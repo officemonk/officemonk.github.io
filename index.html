@@ -1088,7 +1088,7 @@ function buildCard(v,showViews){
     btn='<a href="'+lnk+'" target="_blank" class="action-btn free">&#9989; '+lbl+'</a>';
   }else if(v.type==="paid"){
     var safetitle=v.title.replace(/"/g,"&quot;");
-    btn='<button onclick="openPayModal(this)" data-title="'+safetitle+'" data-price="'+v.price+'" class="action-btn paid">&#128179; Buy Excel File'+(v.price?" - "+v.price:"")+'</button>';
+    btn='<button onclick="openPayModal(this)" data-title="'+safetitle+'" data-price="'+v.price+'" class="action-btn paid">&#128179; Excel File'+(v.price?" - "+v.price:"")+'</button>';
   }else{
     btn='<a href="'+JOIN_URL+'" target="_blank" rel="noopener" class="action-btn member">&#128081; Join Membership to Download</a>';
   }
